@@ -24,12 +24,27 @@ body {
   display: flex;
   justify-content: flex-start;
   width: 50%;
+  padding-left: 40px;
 }
 .timer {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  padding-right: 20px;
+}
+.number-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.number-card {
+  border: 1px solid black;
+  width: 40%;
+  margin: 10px;
+}
+.number-card p {
+  padding-left: 60px;
   max-width: fit-content;
-  padding-right: 40px;
-  border: 1px black solid;
 }
