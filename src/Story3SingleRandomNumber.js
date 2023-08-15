@@ -5,9 +5,12 @@ function randomInt(max, min) {
 }
 
 function createMultipleCardsBetween3And5(){
-    for (let i = 0; i < randomInt(2,6); i++) {
-        document.querySelector('.cardGenerator').textContent += randomInt(0,101) + ' '
+let randomNumbersHolder = {}
+    for (let i = 0; i < randomInt(5,3); i++) {
+        randomNumbersHolder[i] = randomInt(100, 0)
+        // document.querySelector('.cardGenerator').textContent += randomInt(100, 0) + ' '
     }
+    console.log(randomNumbersHolder)
+    // document.querySelector('.cardGenerator').textContent = randomNumbersHolder
 } 
 createMultipleCardsBetween3And5()
-
