@@ -1,13 +1,3 @@
-/* function startTimer()
-{
-    document.querySelector('submit').addEventListener('click', () => {
-        setTimeout(() => {
-            console.log('timer done')
-        }, 30000)
-    })
-} */
-
-
 let timer = function(i) {
     document.querySelector('#timer').textContent = i + ' seconds remaining'
     let timeLeft = setTimeout(() => {timer(--i)}, 1000)
@@ -17,4 +7,7 @@ let timer = function(i) {
 }
 document.querySelector('#button').addEventListener('click', () =>{
     timer(30)
-})
+}) 
+
+
+
