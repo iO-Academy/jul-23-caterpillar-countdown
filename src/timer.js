@@ -3,6 +3,7 @@ let timer = function(i) {
     let timeLeft = setTimeout(() => {timer(--i)}, 1000)
     if (i === 0) {
         clearTimeout(timeLeft)
+        alert('timer done')
     }
 }
 document.querySelector('#button').addEventListener('click', () =>{
