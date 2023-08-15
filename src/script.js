@@ -8,12 +8,13 @@
 } */
 
 
-let timer = function(x) {
-    document.querySelector('#timer').innerHTML = x + ' seconds remaining'
-    let timeLeft = setTimeout(() => {timer(--x)}, 1000)
-    if (x === 0) {
+let timer = function(i) {
+    document.querySelector('#timer').textContent = i + ' seconds remaining'
+    let timeLeft = setTimeout(() => {timer(--i)}, 1000)
+    if (i === 0) {
         clearTimeout(timeLeft)
-        alert('timer done')
     }
 }
-timer(30)
+document.querySelector('#button').addEventListener('click', () =>{
+    timer(30)
+})
