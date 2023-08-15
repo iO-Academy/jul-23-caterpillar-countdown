@@ -11,9 +11,15 @@ let randomNumbersHolder = {}
         } 
         randomNumbersHolder[i] = randomNumber
     }
-    console.log(randomNumbersHolder)
-    // console.log(Object.values(randomNumbersHolder).includes(50))
-    // document.querySelector('.cardGenerator').textContent = randomNumbersHolder
-} 
 
+    Object.values(randomNumbersHolder).forEach(number => {
+        let content = document.querySelector('.number-cards-container').innerHTML
+        content +=  
+            `<div class="number-card">
+                <p>${number}</p>
+            </div>`
+        document.querySelector('.number-cards-container').innerHTML = content
+        console.log(number)
+    })
+} 
 createMultipleCardsBetween3And5()
