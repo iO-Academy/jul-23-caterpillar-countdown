@@ -43,8 +43,20 @@ body {
   border: 1px solid black;
   width: 40%;
   margin: 10px;
+  background-color: #cd853f;
 }
 .number-card p {
   padding-left: 60px;
   max-width: fit-content;
+}
+
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-screen-container {
+  /* display: flex; */
+  /* width: 100%; */
 }
