@@ -1,5 +1,5 @@
 const timer = timeLeft => {
-    document.querySelector('#timer').textContent = timeLeft + ' seconds remaining'
+    document.querySelector('.timer').textContent = 'Time Left: ' + timeLeft + ' seconds'
     const countdown = setTimeout(() => {timer(--timeLeft)}, 1000)
     if (timeLeft === 0) {
         clearTimeout(countdown)
@@ -7,9 +7,7 @@ const timer = timeLeft => {
     }
 }
 
-document.querySelector('#button').addEventListener('click', () => {
-    timer(30)
-})
+timer(30)
 
 
 
