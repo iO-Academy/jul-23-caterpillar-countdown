@@ -10,16 +10,8 @@ let randomNumbersHolder = []
             randomNumber = generateRandomInt(0, 100)
         } 
         randomNumbersHolder[i] = randomNumber
+        document.querySelector('.number-cards-container').innerHTML += `<div class="number-card"><p>${randomNumber}</p></div>`
     }
-
-randomNumbersHolder.forEach(number => {
-    let content = document.querySelector('.number-cards-container').innerHTML
-    content +=  
-        `<div class="number-card">
-            <p>${number}</p>
-        </div>`
-    document.querySelector('.number-cards-container').innerHTML = content
-})
 }
 
 generate3To5NumberCards()
