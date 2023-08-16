@@ -1,4 +1,5 @@
-function scoreCount() {
+console.log(randomNumbersHolder)
+/* function scoreCount() {
 count = 0
 document.querySelector('.number-cards-container').addEventListener('click', () =>{
     count +=1
@@ -6,4 +7,13 @@ document.querySelector('.number-cards-container').addEventListener('click', () =
     console.log(count)
 })
 }
-scoreCount()
+scoreCount() */
+
+function scoreCount() 
+{
+    count = 0
+    if (randomNumbersHolderSequential = []) 
+    {
+        document.querySelector('.score').textContent = 'Score: 1'
+    }
+}
