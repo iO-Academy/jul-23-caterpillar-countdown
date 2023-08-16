@@ -4,11 +4,14 @@ let randomNumbersHolderSequential = randomNumbersHolder.sort((function(a, b){ret
 
 cards.forEach(function (card) {
   card.addEventListener("click", (e) => {
-    if (e.target.textContent == Math.min(...randomNumbersHolderSequential))
-    e.target.style.backgroundColor = "#686868";
-    randomNumbersHolderSequential.shift(randomNumbersHolderSequential)
-    console.log(e.target.textContent);
-  });
+    if (e.target.textContent == Math.min(...randomNumbersHolderSequential)) {
+      e.target.style.backgroundColor = "#686868";
+      randomNumbersHolderSequential.shift(randomNumbersHolderSequential)
+      console.log(e.target.textContent);
+      console.log(randomNumbersHolderSequential)
+    }
+  })
+    
 });
 
 // randomNumbersHolderSequential.forEach(numbers => {
