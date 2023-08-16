@@ -1,18 +1,18 @@
-function generateRandomInt(max, min) {
+function generateRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function generate3To5NumberCards(){
-let randomNumbersHolder = {}
-    for (let i = 0; i < generateRandomInt(5,3); i++) {
-        let randomNumber = generateRandomInt(100, 0)
-        while (Object.values(randomNumbersHolder).includes(randomNumber)) {
-            randomNumber = generateRandomInt(100, 0)
+function generate3To5NumberCards() {
+let randomNumbersHolder = []
+    for (let i = 0; i < generateRandomInt(3,5); i++) {
+        let randomNumber = generateRandomInt(0, 100)
+        while (randomNumbersHolder.includes(randomNumber)) {
+            randomNumber = generateRandomInt(0, 100)
         } 
         randomNumbersHolder[i] = randomNumber
     }
 
-Object.values(randomNumbersHolder).forEach(number => {
+randomNumbersHolder.forEach(number => {
     let content = document.querySelector('.number-cards-container').innerHTML
     content +=  
         `<div class="number-card">
