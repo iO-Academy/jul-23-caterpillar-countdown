@@ -62,19 +62,22 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .number-card {
   border: 1px solid black;
-  width: 40%;
-  margin: 10px;
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 30px;
   background-color: #cd853f;
+  padding-left: 30px;
+  padding: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .highlighted-number-card {
   background-color: #686868;
-}
-
-.number-card {
-  padding-left: 30px;
 }
 
 .instructions-container {
@@ -82,4 +85,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .caterpillar-image {
+    width: 150px;
+    height: 150px;
+  }
 }
