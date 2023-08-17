@@ -21,6 +21,7 @@ body {
 .menu-screen-container {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .caterpillar-image {
@@ -65,15 +66,12 @@ body {
   margin-right: auto;
 }
 
-
 .number-card {
   border: 1px solid black;
   width: 30%;
   margin-top: 50px;
   margin-left: 30px;
   background-color: #cd853f;
-  padding-left: 30px;
-  padding-left: 30px;
   padding: 30px;
   font-size: 1.5rem;
   display: flex;
@@ -90,6 +88,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 footer {
   margin-top: 200px;
   display: flex;
@@ -98,7 +97,7 @@ footer {
 
 .start-btn {
   padding: 20px;
-  border: 3px solid black;
+  border: 3px solid #000000;
   background-color: #cd853f;
   font-weight: bold;
 }
@@ -109,5 +108,3 @@ footer {
     height: 150px;
   }
 }
-
-
