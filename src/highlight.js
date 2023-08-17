@@ -9,7 +9,7 @@ function removeCards () {
 cards.forEach((card) => {
   card.addEventListener("click", (e) => {
     if (e.target.textContent == (randomNumbersInSequence[0])) {
-      e.target.style.backgroundColor = "#686868"
+      e.target.classList.add('highlighted-number-card')
       correctNumbersHolder.push(randomNumbersInSequence.shift(randomNumbersInSequence)) 
       if (randomNumbersInSequence.length == 0) {
       removeCards()
@@ -18,7 +18,7 @@ cards.forEach((card) => {
         randomNumbersInSequence = correctNumbersHolder.concat(randomNumbersInSequence)
         correctNumbersHolder = [] 
         cards.forEach(card => {
-          card.style.backgroundColor = "#cd853f"
+          card.classList.remove('highlighted-number-card')
         })
       }    
   })
