@@ -7,7 +7,7 @@ cards.forEach(function (card) {
       randomNumbersHolderSequential.shift(randomNumbersHolderSequential)
       if (randomNumbersHolderSequential.length === 0) 
       {
-          count= 0
+          count = 0
           document.querySelector('.score').textContent += ' ' + ++count
       }
      }
