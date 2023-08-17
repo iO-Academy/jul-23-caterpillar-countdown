@@ -9,19 +9,19 @@ function removeCards () {
 cards.forEach(function (card) {
   card.addEventListener("click", (e) => {
     if (e.target.textContent == Math.min(...randomNumbersInSequence)) {
-        if (randomNumbersInSequence.length == 1) {
-          removeCards()
-        } else {
-          e.target.style.backgroundColor = "#686868"
-          correctNumbersHolder.push(randomNumbersInSequence.shift(randomNumbersInSequence))
-          console.log(randomNumbersInSequence)     
-        }
+      e.target.style.backgroundColor = "#686868"
+      correctNumbersHolder.push(randomNumbersInSequence.shift(randomNumbersInSequence))
+      console.log(randomNumbersInSequence)  
+      if (randomNumbersInSequence.length == 0) {
+      removeCards()
+      }   
     } else {
         randomNumbersInSequence = correctNumbersHolder.concat(randomNumbersInSequence)
         correctNumbersHolder = [] 
         cards.forEach(card => {
-        card.style.backgroundColor = "#cd853f"
-    })}    
+          card.style.backgroundColor = "#cd853f"
+        })
+      }    
   })
 })
   
