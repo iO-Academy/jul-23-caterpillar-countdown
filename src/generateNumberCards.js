@@ -20,21 +20,19 @@ function generate3To5NumberCards() {
   randomNumbersInSequence = randomNumbersHolder.sort((a, b) => a - b)
 
   const cards = document.querySelectorAll(".number-card")
-  cards.forEach((card) => {
-    card.addEventListener("click", (e) => {
+  cards.forEach(card => {
+    card.addEventListener("click", e => {
       if (e.target.textContent == randomNumbersInSequence[0]) {
-        e.target.classList.add("highlighted-number-card")
+        e.target.classList.add("highlighted")
         removeMinimumNumber()
-        if (randomNumbersInSequence.length == 0) {
+        if (randomNumbersInSequence.length === 0) {
           removeAllCards()
           add1toScore()
           generate3To5NumberCards()
         }
       } else {
         resetNumbersInSequence()
-        cards.forEach((card) => {
-          card.classList.remove("highlighted-number-card")
-        })
+        cards.forEach(card => card.classList.remove("highlighted"))
       }
     })
   })
