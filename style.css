@@ -25,6 +25,10 @@ body {
   width: 50%;
   padding-left: 40px;
 }
+.score span {
+  padding-left: 5px;
+}
+
 .timer {
   display: flex;
   justify-content: flex-end;
