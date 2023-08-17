@@ -22,6 +22,7 @@ cards.forEach(card => {
       removeMinimumNumber() 
       if (randomNumbersInSequence.length == 0) {
         removeAllCards()
+        add1toScore()
       }   
     } else {
         resetNumbersInSequence()
