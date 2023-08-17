@@ -78,7 +78,8 @@ body {
   justify-content: center;
 }
 
-.number-card:hover:not(.highlighted) {
+.number-card:hover:not(.highlighted),
+.start-btn:hover {
   background-color: #9d6630;
   cursor: pointer; 
 }
@@ -106,12 +107,6 @@ footer {
   background-color: #cd853f;
   font-weight: bold;
 }
-
-.start-btn:hover {
-  background-color: #9d6630;
-  cursor: pointer; 
-}
-
 
 @media screen and (max-width: 840px) {
   .caterpillar-image {
