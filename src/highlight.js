@@ -4,7 +4,7 @@ function removeAllCards() {
 }
 
 function removeMinimumNumber() {
-  correctNumbersHolder.push(randomNumbersInSequence.shift(randomNumbersInSequence))
+  correctNumbersHolder.push(randomNumbersInSequence.shift())
 }
 
 function resetNumbersInSequence() {

@@ -62,19 +62,17 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .number-card {
   border: 1px solid black;
   width: 40%;
   margin: 10px;
   background-color: #cd853f;
-}
-
-.highlighted-number-card {
-  background-color: #686868;
-}
-
-.number-card {
   padding-left: 30px;
+}
+
+.highlighted {
+  background-color: #686868;
 }
 
 .instructions-container {
