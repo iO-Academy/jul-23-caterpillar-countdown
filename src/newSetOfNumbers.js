@@ -5,8 +5,11 @@ cards.forEach(function (card) {
     if (e.target.textContent == Math.min(...randomNumbersHolderSequential)) {
       e.target.style.backgroundColor = "#686868"
       randomNumbersHolderSequential.shift(randomNumbersHolderSequential)
-      console.log(e.target.textContent) //leaving this in for assistance with PR
-      console.log(randomNumbersHolderSequential) //leaving this in for assistance with PR
-    }
+      if (randomNumbersHolderSequential.length === 0) 
+      {
+          count= 0
+          document.querySelector('.score').textContent += ' ' + ++count
+      }
+     }
   })
 })
