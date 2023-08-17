@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".number-card")
-let randomNumbersInSequence = randomNumbersHolder.sort(((a, b) => {return a-b}))
+let randomNumbersInSequence = randomNumbersHolder.sort(((a, b) => a-b))
 let correctNumbersHolder = []
 
 function removeCards () {
