@@ -25,6 +25,8 @@ body {
 
 .caterpillar-image {
   width: 300px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #caterpillar-right {
@@ -63,12 +65,19 @@ body {
   margin-right: auto;
 }
 
+
 .number-card {
   border: 1px solid black;
-  width: 40%;
-  margin: 10px;
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 30px;
   background-color: #cd853f;
   padding-left: 30px;
+  padding-left: 30px;
+  padding: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .highlighted {
@@ -81,3 +90,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+footer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn {
+  padding: 20px;
+  border: 3px solid black;
+  background-color: #cd853f;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 840px) {
+  .caterpillar-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
