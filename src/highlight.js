@@ -1,17 +1,16 @@
 const cards = document.querySelectorAll(".number-card")
-let randomNumbersInSequence = randomNumbersHolder.sort((function(a, b){return a-b}))
+let randomNumbersInSequence = randomNumbersHolder.sort(((a, b) => {return a-b}))
 let correctNumbersHolder = []
 
 function removeCards () {
   document.querySelector('.number-cards-container').innerHTML = ""
 }
 
-cards.forEach(function (card) {
+cards.forEach((card) => {
   card.addEventListener("click", (e) => {
-    if (e.target.textContent == Math.min(...randomNumbersInSequence)) {
+    if (e.target.textContent == (randomNumbersInSequence[0])) {
       e.target.style.backgroundColor = "#686868"
-      correctNumbersHolder.push(randomNumbersInSequence.shift(randomNumbersInSequence))
-      console.log(randomNumbersInSequence)  
+      correctNumbersHolder.push(randomNumbersInSequence.shift(randomNumbersInSequence)) 
       if (randomNumbersInSequence.length == 0) {
       removeCards()
       }   
