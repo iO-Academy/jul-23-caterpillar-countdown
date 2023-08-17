@@ -11,4 +11,3 @@ function resetNumbersInSequence() {
   randomNumbersInSequence = correctNumbersHolder.concat(randomNumbersInSequence)
   correctNumbersHolder = [] 
 }
-

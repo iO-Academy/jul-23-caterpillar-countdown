@@ -18,12 +18,10 @@ function generate3To5NumberCards() {
     ).innerHTML += `<div class="number-card">${randomNumber}</div>`
   }
   randomNumbersInSequence = randomNumbersHolder.sort(((a, b) => a-b))
+  
   const cards = document.querySelectorAll(".number-card")
   cards.forEach(card => {
     card.addEventListener("click", e => {
-      console.log(e.target.textContent)
-      console.log(randomNumbersInSequence)
-
       if (e.target.textContent == (randomNumbersInSequence[0])) {
         e.target.classList.add('highlighted-number-card')
         removeMinimumNumber() 
@@ -33,7 +31,6 @@ function generate3To5NumberCards() {
           generate3To5NumberCards()
         }   
       } else {
-        console.log('wrong')
           resetNumbersInSequence()
           cards.forEach(card => {
             card.classList.remove('highlighted-number-card')
