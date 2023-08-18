@@ -1,6 +1,8 @@
 function removeAllCards() {
   document.querySelector('.number-cards-container').innerHTML = ""
   correctNumbersHolder = []
+  randomNumbersInSequence = []
+  randomNumbersHolder = []
 }
 
 function removeMinimumNumber() {
